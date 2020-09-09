@@ -1,0 +1,48 @@
+% !TEX TS-program = luatex
+% Awesome Source CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/darwiin/awesome-neue-latex-cv
+%
+% Author:
+% Christophe Roger (Darwiin)
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+
+\documentclass[localFont,alternative]{yaac-another-awesome-cv}
+\name{Robert}{Mardus-Hall}
+\tagline{Nuclear Engineer, PhD}
+\photo{2.5cm}{robertColour}
+\socialinfo{
+%	\linkedin{rmardushall}\\
+%	\github{rmardushall}\\
+	\smartphone{+61 433 614 163}
+	\email{robbie.mardus@gmail.com}
+	\website{https://rmardushall.github.io}{Extended CV}\\
+	\address{8/192-198 Princes Hwy, Fairy Meadow NSW 2519}\\
+%	\infos{Born July 11, 1990 in Canberra, Australia}
+}
+
+\usepackage[UKenglish]{datetime}
+
+\begin{document}
+	\makecvheader
+	\makecvfooter
+		{}
+		{}
+		{\newdateformat{UKvardate}{%
+            \THEDAY\ \monthname[\THEMONTH], \THEYEAR}
+            \UKvardate
+            \today
+        }
+	\input{section_headline}
+	\input{section_experience}
+	%\input{section_skills}			
+	%\input{section_language}					
+	\input{section_education}				
+	%\input{section_interets}				
+	%\input{section_projets}
+	%\input{section_publications}
+	\input{section_references} 			
+\end{document}
